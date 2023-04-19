@@ -4,35 +4,33 @@ using namespace std;
 
 int main (){
 	
-	float sal, tot, diff, x;
+	float sal, tot, diff;
 	
-	cout << "Insira o valor do seu salrio\n";
+	cout << "Insira o valor do seu salario\n";
 	cin >> sal;
 	
-	cout << "O seu salario antes do reajuste e \n" << sal;
+	cout << "O seu salario antes do reajuste e " << sal <<"\n";
 	
-	if (x <= 280){
+	if (sal <= 280){
 		tot = sal*1.2;
 		diff = tot - sal;
-			cout << "O seu novo salario e " <<tot << "o aumento de 20% e "<< diff <<"\n";
+			cout << "O seu novo salario e " <<tot << " Com um aumento de 20% e uma diferenca de R$"<< diff <<"\n";
 	}
-	else if (x > 280 and x <= 700){
+	else if (sal > 280 and sal <= 700){
 		tot = sal*1.15;
 		diff = tot - sal;
-			cout << "O seu novo salario e " <<tot << "o aumento de 15% e "<< diff <<"\n";
+			cout << "O seu novo salario e " <<tot << " Com um aumento de 15% e uma diferenca de R$" << diff <<"\n";
 	}
-	else if (x > 700 and x <= 1500){
+	else if (sal > 700 and sal <= 1500){
 		tot = sal*1.1;
 		diff = tot - sal;
-			cout << "O seu novo salario e " <<tot << "o aumento de 10% e "<< diff <<"\n";
+			cout << "O seu novo salario e " <<tot << " Com um aumento de 10% e uma diferenca de R$"<< diff <<"\n";
 	}
-	else (x > 1500){
-		tot = sal*1,05;
+	else{
+		tot = sal*1.05;
 		diff = tot - sal;
-			cout << "O seu novo salario e " <<tot << "o aumento de 5% e "<< diff <<"\n";
+			cout << "O seu novo salario e " <<tot << " Com um aumento de 5% e uma diferenca de R$"<< diff <<"\n";
 	}
-	
-	cout << "o seu novo salarrio com o reajuste e \n"<< tot;
 	system ("pause");
 		return 0;
 }
