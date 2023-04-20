@@ -8,7 +8,7 @@ int main() {
 	
 	cout << "Insira o primeiro numero\n";
 	cin >> a;
-	cout << "Insira o segundo numeo\n";
+	cout << "Insira o segundo numero\n";
 	cin >> b;
 	cout << "Insira o terceiro numero\n";
 	cin >> c;
